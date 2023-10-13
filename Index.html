@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Details</title>
+
+    <style>
+
+        body{
+            font-size: 30px;
+            font-style: unset;
+            color: darkorange;
+            background-image: url(Black.jpg);
+        }
+        #f1{
+            height: 370px;
+            margin-left: 600px;
+            margin-right: 600px;
+            padding-left: 270px;
+            border-radius: 30px;
+        }
+
+        #f2{
+            height: 700px;
+            margin-left: 600px;
+            margin-right: 600px;
+            padding-left: 310px;
+            border-radius: 30px;
+        }
+
+        #btn{
+            margin-left: 950px;
+            border: 5px;
+            border-radius: 10px;
+        }
+
+        #btn:hover{
+            color: red;
+            background-color: burlywood;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form action="Thankyou.html">
+<fieldset id="f1">
+    <legend style="align-self: center;"> <span style=" color: lightgoldenrodyellow;">Personal Details</span> </legend>
+    <label for="First">First Name</label>
+    <input type="text" id="First"  pattern="[a-zA-Z]{3,8}" required placeholder="Enter your name" name="Firstname" style=" height: 25px;">
+    <br><br>
+    <label for="Middle">Middle Name</label>
+    <input type="text" id="Middle" required pattern="[a-zA-Z]{3,8}"  placeholder="Enter your Middlename" name="Middle" style=" height: 25px;">
+    <br><br>
+    <label for="Last"> Last Name</label>
+    <input type="text" id="Last" required pattern="[a-zA-Z]{3,8}" placeholder="Enter your Last name" name="Lastname" style=" height: 25px;">
+    <br><br>
+    <label for="dob">DOB</label>
+    <input type="date" id="dob" required placeholder="dob" name="dob" style=" height: 30px;">
+    <br><br>
+    <label for="contact">Ph No</label>
+    <input type="number" pattern="[6-9]{1}[0-9]{9}" id="contact" required placeholder="Enter your number" name="number" style=" height: 30px;" >
+</fieldset>
+<br><br>
+<fieldset id="f2">
+    <legend><span style=" color: lightgoldenrodyellow;">Education Details</span></legend>
+
+    <label for=""> Department</label>
+<br><br>
+    <label for="cse">CSE</label>
+    <input type="radio" required name="CSE" id="CSE" style=" height: 25px;">
+
+    <br><br>
+    <label for="ec">EC</label>
+    <input type="radio" required name="CSE" id="ec" style=" height: 25px;">
+
+    <br><br>
+    <label for="civ">CIV</label>
+    <input type="radio" required name="CSE" id="civ" style=" height: 25px;">
+
+    <br><br>
+    <label for="mech">MECH</label>
+    <input type="radio" required name="CSE" id="mech" style=" height: 25px;">
+    <br><br>
+    <label for="yog"> YOG</label>
+    <input list="YOP" required name="list" id="yog" style=" height: 30px;">
+    <br><br>
+    <datalist id="YOP">
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+    </datalist>
+
+    <label for="">SKILLS</label>
+<br><br>
+    <label for="html">HTML</label>
+    <input type="checkbox" name="html" id="html" style=" height: 20px;">
+<br><br>
+    <label for="css">CSS</label>
+    <input type="checkbox" name="css" id="css"  style="height: 20px;">
+<br><br>
+    <label for="javascript">Java Script</label>
+    <input type="checkbox" name="javascript" id="javascript" style="height: 15px;">
+</fieldset>
+<br>
+<input type="submit" value="Submit" id="btn" style=" font-size: 20px; font-style:oblique;">
+</form>
+</body>
+</html>
